@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.9.7, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.9.7, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='assets/images/logo2.png') }}" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <title>Home</title>
+
+
+ 
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/web/assets/mobirise-icons/mobirise-icons.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/tether/tether.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap-grid.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap-reboot.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/dropdown/css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/animatecss/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/theme/css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/mobirise/css/mbr-additional.css') }}" type="text/css">
+  
+ <style type="text/css">
+    .list-group-item-secondary{
+      color: #000000;
+      background-color: transparent;
+      font-weight: bold;
+
+     
+
+    }
+
+    a:hover{
+      
+      color: #000000
+    }
+    
+.list-group-item-action{
+    color: #808080;
+  
+
+}
+
+.list-group-item {
+    padding: 3px 10px
+}
+
+</style>
+
+  
+  
+</head>
+<body>
+  <section class="menu cid-roO1LfOefA" once="menu" id="menu2-0">
+
+    
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://mobirise.co">
+                        <img src="{{ url_for('static', filename='assets/images/logo2.png') }}" alt="Mobirise" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://mobirise.co">
+                        AKDEL</a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-secondary display-4" href="/">
+                        International</a></li><li class="nav-item"><a class="nav-link link text-secondary display-4" href="/recent">
+                        Recent</a></li><li class="nav-item dropdown"><a class="nav-link link text-secondary dropdown-toggle display-4" data-toggle="dropdown-submenu" aria-expanded="false">
+                        National</a><div class="dropdown-menu"><a class="text-secondary dropdown-item display-4" href="/delhi">Delhi</a><a class="text-secondary dropdown-item display-4" href="/mumbai" aria-expanded="false">Mumbai</a><a class="text-secondary dropdown-item display-4" href="/kolkata" aria-expanded="false">Kolkata</a><a class="text-secondary dropdown-item display-4" href="/bangalore" aria-expanded="false">Bangalore</a><a class="text-secondary dropdown-item display-4" href="/hyderabad" aria-expanded="false">Hyderabad</a><a class="text-secondary dropdown-item display-4" href="/chennai" aria-expanded="false">Chennai</a><a class="text-secondary dropdown-item display-4" href="/pune" aria-expanded="false">Pune</a><a class="text-secondary dropdown-item display-4" href="/kanpur" aria-expanded="false">Kanpur</a><a class="text-secondary dropdown-item display-4" href="/nagpur" aria-expanded="false"><b>Nagpur</b></a></div></li><li class="nav-item"><a class="nav-link link text-secondary display-4" href="/business">
+                        Business</a></li><li class="nav-item"><a class="nav-link link text-secondary display-4" href="/sports">
+                        Sports</a></li><li class="nav-item"><a class="nav-link link text-secondary display-4" href="/technology">
+                        Technology</a></li><li class="nav-item"><a class="nav-link link text-secondary display-4" href="/startups">
+                        Startups</a></li>
+                <li class="nav-item">
+                    <a class="nav-link link text-secondary display-4" href="/aboutus">
+                        About Us
+                    </a>
+                </li></ul>
+            
+        </div>
+    </nav>
+</section>
+
+
+<div class="container-fluid mt-5">
+      
+<div class="card-deck">
+  
+  <div class="list-group mr-3 ml-3 md-3 mt-5">
+
+  <a href="https://timesofindia.indiatimes.com/world" class="list-group-item list-group-item-secondary" target="_blank">
+    Times of India
+  </a>
+ {% for item in toi %}
+  <a href={{item.link}} class="list-group-item list-group-item-action" target="_blank" target="_blank">{{item.title}}</a>
+
+{% endfor %}
+</div>
+
+
+
+
+<div class="list-group mr-3 ml-3 md-3 mt-5">
+
+  <a href="https://indianexpress.com/section/world/" class="list-group-item list-group-item-secondary" target="_blank">
+    The Indian Express
+  </a>
+  {% for item in indian_express %}
+  <a href={{item.link}} class="list-group-item list-group-item-action" target="_blank" target="_blank">{{item.title}}</a>
+  {% endfor %}
+
+</div>
+
+
+
+
+<div class="list-group mr-3 ml-3 md-3 mt-5">
+
+  <a href="https://www.firstpost.com/category/world" class="list-group-item list-group-item-secondary" target="_blank">
+    First Post
+  </a>
+  {% for item in first_post %}
+  <a href={{item.link}} class="list-group-item list-group-item-action" target="_blank" target="_blank">{{item.title}}</a>
+  {% endfor %}
+
+</div>
+
+
+<div class="list-group mr-3 ml-3 md-3 mt-5">
+
+  <a href="https://www.thehindu.com/news/international/" class="list-group-item list-group-item-secondary" target="_blank">
+    The Hindu
+  </a>
+   {% for item in hindu %}
+  <a href={{item.link}} class="list-group-item list-group-item-action" target="_blank" target="_blank">{{item.title}}</a>
+ {% endfor %}
+
+</div>
+
+
+<div class="list-group mr-3 ml-3 md-3 mt-5">
+
+  <a href="https://www.indiatoday.in/world" class="list-group-item list-group-item-secondary" target="_blank">
+    India Today
+  </a>
+  {% for item in india_today %}
+  <a href={{item.link}} class="list-group-item list-group-item-action" target="_blank" target="_blank">{{item.title}}</a>
+  {% endfor %}
+
+</div>
+
+<div class="list-group mr-3 ml-3 md-3 mt-5">
+
+  <a href="https://www.news18.com/world/" class="list-group-item list-group-item-secondary" target="_blank">
+    News 18
+  </a>
+  {% for item in news_18 %}
+  <a href={{item.link}} class="list-group-item list-group-item-action" target="_blank" target="_blank">{{item.title}}</a>
+  {% endfor %}
+
+</div>
+
+<div class="list-group mr-3 ml-3 md-3 mt-5">
+
+  <a href="https://www.telegraph.co.uk/news/world/" class="list-group-item list-group-item-secondary" target="_blank">
+    The Telegraph
+  </a>
+  {% for item in telegraph_india %}
+  <a href={{item.link}} class="list-group-item list-group-item-action" target="_blank" target="_blank">{{item.title}}</a>
+  {% endfor %}
+
+</div>
+
+<div class="list-group mr-3 ml-3 md-3 mt-5">
+
+  <a href="https://www.dnaindia.com/world" class="list-group-item list-group-item-secondary" target="_blank">
+    DNA
+  </a>
+  {% for item in dna %}
+  <a href={{item.link}} class="list-group-item list-group-item-action" target="_blank" target="_blank">{{item.title}}</a>
+  {% endfor %}
+
+</div>
+
+
+
+<div class="list-group mr-3 ml-3 md-3 mt-5">
+
+  <a href="https://www.outlookindia.com/magazine/section/international/20/" class="list-group-item list-group-item-secondary" target="_blank">
+    Outlook India
+  </a>
+  {% for item in outlook_india %}
+  <a href={{item.link}} class="list-group-item list-group-item-action" target="_blank" target="_blank">{{item.title}}</a>
+  {% endfor %}
+
+</div>
+
+
+
+
+<div class="container">
+        <div class="media-container-row align-center mbr-black">
+            <div class="col-12">
+                <p class="mbr-text mb-10 mbr-fonts-style display-7 mt-5">
+                    © Copyright 2019 AKDEL - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+  <script src="{{ url_for('static', filename='assets/web/assets/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/popper/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/tether/tether.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/dropdown/js/script.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/touchswipe/jquery.touch-swipe.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/viewportchecker/jquery.viewportchecker.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/smoothscroll/smooth-scroll.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/theme/js/script.js') }}"></script>
+  
+  
+ <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden">
+  </body>
+</html>
